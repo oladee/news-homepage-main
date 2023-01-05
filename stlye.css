@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 1.5em;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+ul{
+    list-style-type: none;
+}
+.links{
+    padding: 70px 0px;
+    font-weight: 800;
+}
+li{
+    padding: 10px 0px;
+    font-size: 1.2em;
+    
+}
+#sideMenu{
+    position: absolute;
+    background-color: white;
+    padding: 10vw;
+    padding-left: 5vw;
+    min-height: 100%;
+    width: 56vw;
+    top: 0;
+    left: 28vw;
+    z-index: 2;
+    display: none;
+}
+.flexible{
+    display: flex;
+    flex-direction: column;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+li a:hover{
+    color: hsl(35, 77%, 62%);
+}
+.phone{
+    grid-area: img;
+    width: 100%;
+}
+article{
+    padding: 10px 0px;
+}
+article p{
+    padding: 15px 0px;
+    line-height: 23px;
+}
+header h1{
+    width: 76%;
+    font-weight: 800;
+    grid-area: header;
+    font-size: 40px;
+    padding-top: 20px;
+}
+button{
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 12px 40px;
+
+}
+h3 > a{
+        text-decoration: none;
+        color: white;
+        font-size: 21px;
+}
+h3 >a:hover{
+    color: hsl(35, 77%, 62%);
+}
+h4 >a{
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-weight: 800;
+}
+h4 >:hover{
+    color: hsl(35, 77%, 62%);
+}
+header h2{
+    color: hsl(35, 77%, 62%);
+    font-weight: 800;
+}
+main{
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    padding: 20px;
+    grid-area: main;
+    margin: 30px 0px;
+}
+main > div{
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+.no{
+    font-size: 29px;
+    font-weight: 800;
+    color: hsl(233, 8%, 79%);
+    padding-bottom: 10px;
+}
+main p{
+    padding-top: 15px;
+    line-height: 25px;
+}
+main hr{
+    border-bottom: 1px solid black;
+}
+button:hover{
+    background-color: hsl(240, 100%, 5%);
+}
+.list{
+    display: none;
+}
+.number{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0px;
+
+}
+h4 +p{
+    width: 100%;
+    line-height: 25px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+.footing{
+    padding: 40px 0px;
+}
+.image-section img{
+    width:100px;
+}
+@media (min-width: 1024px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+                            "img img main"
+                            "header article main"
+                            "no1 no2 no3"
+                            ;
+        grid-gap: 25px 30px;
+    }
+    body{
+        padding: 70px;
+    }
+    .phone{
+        width: 100%;
+        height: 300px;
+    }
+    #menu{
+        display: none;
+    }
+    .list{
+        display: block;
+    }
+    ul{
+        display: flex;
+        
+    }
+    h1{
+        font-size: x;
+        font-weight: bolder;
+    }
+    header h1{
+        width: 95%;
+        font-weight: 700;
+        grid-area: header;
+        font-size: 60px;
+    }
+    main > div{
+        margin-top: 50px;
+        padding-bottom: 40px;
+
+    }
+    main{
+        margin: 0px;
+    }
+    article p{
+        line-height: 28px;
+        width: 95%;
+        font-size: 20px;
+    }
+    button{
+        margin-top: 22px;
+        font-size: 22px;
+    }
+    
+    li{
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 60px;
+        font-size: 20px;
+    }
+    nav{
+        padding-bottom: 60px;
+    }
+    #sideMenu{
+        display: none;
+    }
+}
