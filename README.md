@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github repo](https://github.com/oladee/news-homepage-main)
-- Live Site URL: [visit Live]()
+- Live Site URL: [visit Live](https://oladee.github.io/news-homepage-main/)
 
 
 ### Built with
